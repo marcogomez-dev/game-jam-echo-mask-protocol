@@ -1,0 +1,8 @@
+name = "echo-mask-protocol"
+compatibility_date = "2026-01-31"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "echo-db"
+database_id = "local-db"

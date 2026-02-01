@@ -1,8 +1,14 @@
+# All configuration for Cloudflare Workers and Pages is defined here.
+
 name = "echo-mask-protocol"
 compatibility_date = "2026-01-31"
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Solves the Node.js compatibility warning
 compatibility_flags = ["nodejs_compat"]
 
+# D1 Database Binding
 [[d1_databases]]
-binding = "DB"
+binding = "echo_db"
 database_name = "echo-db"
-database_id = "local-db"
+database_id = "26b4a989-ec28-4239-aa47-88b838e8f2fb"

@@ -8,7 +8,7 @@ declare global {
     // interface PageState {}
     interface Platform {
       env: {
-        DB: D1Database;
+        echo_db: D1Database;
       };
       context: {
         waitUntil(promise: Promise<any>): void;

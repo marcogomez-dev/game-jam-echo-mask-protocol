@@ -2,7 +2,7 @@ import { json } from "@sveltejs/kit";
 
 export async function POST({ request, platform }) {
   const { username, level } = await request.json();
-  const db = platform?.env?.DB;
+  const db = platform?.env?.echo_db;
 
   if (db) {
     try {
@@ -22,7 +22,7 @@ export async function POST({ request, platform }) {
 }
 
 export async function GET({ platform }) {
-  const db = platform?.env?.DB;
+  const db = platform?.env?.echo_db;
   if (db) {
     try {
       const { results } = await db
